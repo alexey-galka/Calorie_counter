@@ -4,19 +4,14 @@ const $countButton: HTMLElement = document.querySelector(
 const $clearButton: HTMLElement = document.querySelector(
   '.form__reset-button'
 ) as HTMLElement;
-const $ageInput: HTMLInputElement = document.forms.counter.elements
-  .age as HTMLInputElement;
-const $heightInput: HTMLInputElement = document.forms.counter.elements
-  .height as HTMLInputElement;
-const $weightInput: HTMLInputElement = document.forms.counter.elements
-  .weight as HTMLInputElement;
-const $sex: HTMLSelectElement = document.forms.counter.elements
-  .gender as HTMLSelectElement;
+const $ageInput: HTMLInputElement = document.getElementById("age") as HTMLInputElement;
+const $heightInput: HTMLInputElement = document.getElementById("height") as HTMLInputElement;
+const $weightInput: HTMLInputElement = document.getElementById("weight") as HTMLInputElement;
+const $sex: HTMLSelectElement = document.forms.namedItem('counter').elements.gender as HTMLSelectElement;
 const $results: HTMLElement = document.querySelector(
   '.counter__result'
 ) as HTMLElement;
-const $activity: HTMLSelectElement = document.forms.counter.elements
-  .activity as HTMLSelectElement;
+const $activity: HTMLSelectElement = document.forms.namedItem('counter').elements.activity as HTMLSelectElement;
 const $caloriesNormal: HTMLElement = document.getElementById(
   'calories-norm'
 ) as HTMLElement;
